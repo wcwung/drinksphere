@@ -5,10 +5,12 @@ Syntax error: File to import not found or unreadable: bootstrap.
                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets
                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets
                 Compass::SpriteImporter
-        on line 17 of /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/application.css.scss
+        on line 1 of /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/bootstrap.css.scss
+
+1: /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/bootstrap.css.scss
 
 Backtrace:
-/Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/application.css.scss:17
+/Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/bootstrap.css.scss:1
 /Library/Ruby/Gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/import_node.rb:67:in `import'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/import_node.rb:28:in `imported_file'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/import_node.rb:37:in `css_import?'
@@ -57,4 +59,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: bootstrap.\A               Load paths:\A                 /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 17 of /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/application.css.scss"; }
+  content: "Syntax error: File to import not found or unreadable: bootstrap.\A               Load paths:\A                 /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/bootstrap.css.scss\A \A 1: /Users/Manhattan/Sites/pinteresting/app/assets/stylesheets/bootstrap.css.scss"; }
