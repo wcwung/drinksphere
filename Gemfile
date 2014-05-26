@@ -15,10 +15,12 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 #Bootstrap SASS
-gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bootstrap-sass'
 
 #COMPASS
 gem 'compass'
+#Compass Rails
+gem 'compass-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
