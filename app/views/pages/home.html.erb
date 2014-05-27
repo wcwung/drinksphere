@@ -1,7 +1,7 @@
 <div class="jumbotron center"> 
   <h1>Smart drink recommendations</h1>
   <% if user_signed_in? %>
-    <p>Hello!</p>
+
   <% else %>
     <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-danger" %>
     <%= link_to "Log In", new_user_session_path, class: "btn btn-primary" %>
