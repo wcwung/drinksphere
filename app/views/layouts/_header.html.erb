@@ -40,17 +40,20 @@
       </form> -->
       <ul class="nav navbar-nav navbar-right">
           <li>
+            <!--
             <%= link_to new_pin_path, class: "strong" do %>
               <i class="fa fa-plus"></i>
               New Drink
               <% end %>
-     
+            -->
           </li> 
-        <li><%= link_to "About", about_path %></li>
         <% if user_signed_in? %>
-          <li><%= link_to "Account Settings", edit_user_registration_path %></li>
+          <li><%= link_to 'Account Settings', edit_user_registration_path %>
+             
+          </li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
         <% else %>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
           <li><%= link_to "Sign in", new_user_session_path %></li>
         <% end %>
 <!--         <li class="dropdown">

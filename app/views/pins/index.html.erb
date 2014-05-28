@@ -1,8 +1,46 @@
-<!--
-<% if user_signed_in? %>
-  <%= link_to 'New Pin', new_pin_path %>
-<% end %> 
--->
-<%= render "index", pins: @pins %>
+<ul class="mini-nav">
+ <li> <%= link_to new_pin_path, class: "strong" do %>
+     <i class="fa fa-plus"></i>
+     New Drink
+   <% end %>
+ </li>
+ <li>
+   My Feed
+ </li>
+ <li>
+   Most Popular
+ </li>
+ <li>
+   Local Favorites
+ </li> 
+</ul>
+
+<div id="pins" class="transitions-enabled">
+  <% @pins.each do |pin| %>
+    <div class="box panel panel-default">
+          <%= link_to image_tag(pin.image.url(:medium)), pin %>
+          <div class="panel-body">
+            <%= pin.description %>
+            <!-- if pin has a user, print user.email under user column -->
+            <br />
+            
+            
+              
+              <div class="actions">
+              <div class="name"><%= pin.user.name if pin.user %></div>
+              <% if pin.user == current_user %>
+                <%= link_to edit_pin_path(pin) do %>
+                  <i class="fa fa-pencil-square-o right-buffer"></i>
+                <% end %>
+                <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                    <i class="fa fa-times"></i>
+                <% end %>
+              </div>
+              <% end %>
+          </div>
+          
+    </div>
+  <% end %>
+</div>
 
 <br>

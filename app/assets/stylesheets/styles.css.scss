@@ -1,3 +1,8 @@
+$carrot: #e67e22;
+a:hover {
+  text-decoration: none;
+}
+
 .hero {
   background: url('hero_banner.jpg') no-repeat;
   background-size: cover;
@@ -12,9 +17,15 @@
     font-weight: 700;
     letter-spacing: 1.7px;
     line-height: 50px;
-    font-size: 48px;
+    font-size: 4em;
     margin-top: 8%;
     font-family: 'Helvetica Neue', sans-serif;
+  }
+  .badoom {
+    color: lighten(#bbb, 5);
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: 1.4px;
   }
 }
 .navbar-brand {
@@ -41,6 +52,35 @@ th {
   font-size: 12px;
 }
 
+.navbar-default .navbar-nav > li > a {
+  color: #7f8c8d;
+}
+
+.cta-sign{
+  color: #fff;
+  font-size: 1em;
+  background: #f39c12;
+  border-radius: 4px;
+  width: 120px;
+  text-align: center;
+  margin: 50px auto;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid #f39c12;
+  letter-spacing: 0.1em;
+  font-weight: 100;
+  text-transform: uppercase;
+
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+    background: $carrot;
+  }
+}
+
 #pins {
   margin: 0 auto;
 }
@@ -62,10 +102,31 @@ th {
 
   i {
     font-size: 0.9em;
+  }
+
+  .right-buffer {
     margin-right: 10px;
+  }
+
+  .name {
+    font-size: 0.8em;
+    float: left;
   }
 }
 
 .top-buffer {
   margin-top: 45px;
+}
+
+/*Mini Navigation*/
+.mini-nav {
+  font-size: 13px;
+  border-bottom: 1px solid lighten(#ccc, 10);
+  padding-bottom: 10px;
+
+
+  li {
+    display: inline-block;
+    margin-right: 1.5em;
+  }
 }
