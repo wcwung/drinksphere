@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 
@@ -19,6 +18,9 @@ gem 'bootstrap-sass'
 #Devise(log-in)
 gem 'devise'
 
+#PaperClip
+gem 'paperclip', github: 'thoughtbot/paperclip'
+
 #COMPASS
 gem 'compass'
 #Compass Rails
@@ -30,9 +32,12 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem 'pry-rails'
 
 group :development, :test do
 	gem 'sqlite3'
+	gem 'better_errors'
+	gem 'binding_of_caller'
 end
 
 group :production do
