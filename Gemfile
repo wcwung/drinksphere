@@ -21,6 +21,8 @@ gem 'devise'
 #PaperClip
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
+#Font-Awesome
+gem 'font-awesome-rails', '~> 4.1.0.0'
 
 # Masonry
 gem 'masonry-rails'
