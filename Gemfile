@@ -21,11 +21,9 @@ gem 'devise'
 #PaperClip
 gem 'paperclip', github: 'thoughtbot/paperclip'
 
-#COMPASS
-gem 'compass'
-#Compass Rails
-gem 'compass-rails'
 
+# Masonry
+gem 'masonry-rails'
 # Amazon AWS
 gem 'aws-sdk'
 
@@ -33,6 +31,7 @@ gem 'aws-sdk'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 gem 'pry-rails'

@@ -1,5 +1,5 @@
 <div class="jumbotron center"> 
-  <h1>Smart drink recommendations</h1>
+  <h2 class="boom">Drink recommendations based on your mood</h2>
   <% if user_signed_in? %>
 
   <% else %>
@@ -7,3 +7,4 @@
     <%= link_to "Log In", new_user_session_path, class: "btn btn-primary" %>
   <% end %>
 </div>
+  <%= render "pins/index", pins: @pins %>

@@ -2,7 +2,7 @@
   color: gray;
   background: #fff;
 
-  h1 {
+  h2 {
     color: #e67e22;
     margin-bottom: 40px;
     font-weight: 900;
@@ -19,4 +19,21 @@
 
 th {
   margin-right: 40px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+#pins {
+  margin: 0 auto;
+}
+
+.box {
+  margin: 5px;
+  width: 214px;
+
+  img {
+    width: 100%;
+  }
 }
