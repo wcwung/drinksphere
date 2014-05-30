@@ -12,6 +12,6 @@ $(function(){
         $('#drinking_buddy').fadeOut(function(){
             $(this).html(drinks[i=(i+1)%drinks.length]).fadeIn();
         });
-    }, 3400);
+    }, 4000);
         
 })();
