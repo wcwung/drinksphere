@@ -9,23 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+
   
-
-  <%= render 'layouts/header' %>
-    <div class="hero center">
-      <h1 class="boom">Evolved Social Drinking</h1>
-      <h2 class="badoom">Discover new favorites.</h2>
-      <!-- Sign up / Sign in buttons if user not signed in -->
-      <% if !user_signed_in? %>
-    
-          <%= link_to new_user_registration_path do%>
-            <div class="cta-sign">Sign Up</div>
-          <% end %>
-      
-      <% end %>
-
-    </div>
-  <div class="container top-buffer">
+    <%= render 'layouts/header' %>
+    <%= content_for :fluidity %>
+    <div class="container top-buffer">
     <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert alert-info") %>
     <% end %>

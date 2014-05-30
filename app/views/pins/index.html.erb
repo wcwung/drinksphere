@@ -1,7 +1,32 @@
+<% content_for :fluidity do %>
+  <div class="hero center">
+        <h1 class="boom">Evolved Social Discovery</h1>
+        <h2 class="badoom">Find your next favorite drink.</h2>
+        <!-- Sign up / Sign in buttons if user not signed in -->
+        <% unless user_signed_in? %>
+      
+          <%= link_to new_user_registration_path do%>
+            <div class="cta-sign">Sign Up</div>
+          <% end %>
+          <% else %>
+          <ul class="dash-container">
+            <li class="dash">
+              <i class="fa fa-facebook"> &nbsp;LIKE</i>
+            </li>
+            <li class="dash">
+              <i class="fa fa-twitter"> &nbsp;FOLLOW</i>
+            </li>
+          </ul>
+
+        <% end %>
+        
+  </div>
+<% end %>
 <ul class="mini-nav">
+  <!-- <li><h4><%= Pin.count %> Drinks</h4></li> -->
  <li> <%= link_to new_pin_path, class: "strong" do %>
-     <i class="fa fa-plus"></i>
-     New Drink
+       <i class="fa fa-plus"></i>
+       New Drink
    <% end %>
  </li>
  <li>
@@ -13,6 +38,9 @@
  <li>
    Local Favorites
  </li> 
+ <li>
+   
+ </li>
 </ul>
 
 <div id="pins" class="transitions-enabled">
