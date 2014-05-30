@@ -17,10 +17,17 @@
             <% end %>
           </div>
         </p>
-        <p><%= @pin.user.name_initialed %></p>
-        <% if @pin.user == current_user %>
-          <%= link_to 'Edit', edit_pin_path(@pin) %>
-        <% end %>
+        <div class="actions">
+              <div class="name"><%= @pin.user.name_initialed %></div>
+              <% if @pin.user == current_user %>
+                <%= link_to edit_pin_path(@pin) do %>
+                  <i class="fa fa-pencil-square-o right-buffer"></i>
+                <% end %>
+                <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+                    <i class="fa fa-times"></i>
+                <% end %>
+              <% end %>
+            </div>
       </div>
 
     </div>

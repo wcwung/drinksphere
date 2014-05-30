@@ -1,12 +1,12 @@
 $(function(){
     var drinks = [
-        'beer',
-        'spirit',
-        'cocktail',
-        'cider',
-        'whiskey',
-        'margarita',
-        'wine'
+        'beer.',
+        'spirit.',
+        'cocktail.',
+        'cider.',
+        'whiskey.',
+        'margarita.',
+        'wine.'
         ], i = 0;
     setInterval(function(){
         $('#drinking_buddy').fadeOut(function(){

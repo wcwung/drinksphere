@@ -1,0 +1,92 @@
+Searching 394 files for ":description"
+
+/Users/Manhattan/Sites/pinteresting/app/models/Find Results:
+   17      7  
+   18      8: 	validates :image, presence: true
+   19:     9: 	validates :description, presence: true
+   20     10  end
+   21     11  
+   ..
+   39  
+   40  
+   41: Searching 393 files for ":description"
+   42  
+   43  /Users/Manhattan/Sites/pinteresting/app/views/pins/_form.html.erb:
+
+2 matches in 1 file
+
+
+Searching 394 files for ":title"
+
+/Users/Manhattan/Sites/pinteresting/app/controllers/pins_controller.rb:
+   56      # Never trust parameters from the scary internet, only allow the white list through.
+   57      def pin_params
+   58:       params.require(:pin).permit(:title, :image, :locale)
+   59  
+   60      end
+
+/Users/Manhattan/Sites/pinteresting/app/models/Find Results:
+   43  /Users/Manhattan/Sites/pinteresting/app/views/pins/_form.html.erb:
+   44     17    <div class="form-group">
+   45:    18      <%= f.label :title %>
+   46:    19:     <%= f.text_field :title, class: "form-control" %>
+   47     20    </div>
+   48     21   <div class="form-group">
+
+/Users/Manhattan/Sites/pinteresting/app/models/pin.rb:
+    7  
+    8  	validates :image, presence: true
+    9: 	validates :title, presence: true
+   10  end
+   11  
+
+/Users/Manhattan/Sites/pinteresting/app/views/pins/_form.html.erb:
+   16    </div>
+   17    <div class="form-group">
+   18:     <%= f.label :title %>
+   19:     <%= f.text_field :title, class: "form-control" %>
+   20    </div>
+   21   <div class="form-group">
+
+/Users/Manhattan/Sites/pinteresting/db/migrate/20140527023108_create_pins.rb:
+    2    def change
+    3      create_table :pins do |t|
+    4:       t.string :title
+    5  
+    6        t.timestamps
+
+7 matches across 5 files
+
+
+Searching 394 files for ":title"
+
+/Users/Manhattan/Sites/pinteresting/app/controllers/pins_controller.rb:
+   56      # Never trust parameters from the scary internet, only allow the white list through.
+   57      def pin_params
+   58:       params.require(:pin).permit(:description, :image, :locale)
+   59  
+   60      end
+
+/Users/Manhattan/Sites/pinteresting/app/models/Find Results:
+   43  /Users/Manhattan/Sites/pinteresting/app/views/pins/_form.html.erb:
+   44     17    <div class="form-group">
+   45:    18      <%= f.label "Title" %>
+   46:    19:     <%= f.text_field :description, class: "form-control" %>
+   47     20    </div>
+   48     21   <div class="form-group">
+
+/Users/Manhattan/Sites/pinteresting/app/models/pin.rb:
+    7  
+    8  	validates :image, presence: true
+    9: 	validates :description, presence: true
+   10  end
+   11  
+
+/Users/Manhattan/Sites/pinteresting/db/migrate/20140527023108_create_pins.rb:
+    2    def change
+    3      create_table :pins do |t|
+    4:       t.string :description
+    5  
+    6        t.timestamps
+
+5 matches across 4 files

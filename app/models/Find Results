@@ -1,0 +1,50 @@
+Searching 389 files for "new pin"
+
+/Users/Manhattan/Sites/pinteresting/app/views/pins/new.html.erb:
+    1: <h1>New pin</h1>
+    2  
+    3  <%= render 'form' %>
+
+1 match in 1 file
+
+
+Searching 393 files for "validate"
+
+/Users/Manhattan/Sites/pinteresting/app/models/pin.rb:
+    4  	# :default_url => "/images/img.png", image incase an image is missing
+    5  	has_attached_file :image, :styles => {:small => "200x200", :medium => "300x300", :thumb=> "100x100" }
+    6: 	validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+    7  
+    8: 	validates :image, presence: true
+    9: 	validates :description, presence: true
+   10  end
+   11  
+
+/Users/Manhattan/Sites/pinteresting/app/models/user.rb:
+    7    has_many :pins
+    8  
+    9:   validates :name, presence: true
+   10:   validates :password, length: { in: 6..20 }
+   11  
+   12    has_many :pins, dependent: :destroy
+
+/Users/Manhattan/Sites/pinteresting/config/initializers/devise.rb:
+  140    config.password_length = 8..128
+  141  
+  142:   # Email regex used to validate email formats. It simply asserts that
+  143    # one (and only one) @ exists in the given string. This is mainly
+  144    # to give user feedback and not to assert the e-mail validity.
+
+6 matches across 3 files
+
+
+Searching 393 files for ":description"
+
+/Users/Manhattan/Sites/pinteresting/app/views/pins/_form.html.erb:
+   17    <div class="form-group">
+   18      <%= f.label :title %>
+   19:     <%= f.text_field :title, class: "form-control" %>
+   20    </div>
+   21   <div class="form-group">
+
+1 match in 1 file
