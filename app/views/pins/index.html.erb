@@ -21,13 +21,13 @@
           <%= link_to image_tag(pin.image.url(:medium)), pin %>
           <div class="panel-body">
             <%= pin.description %>
-            <!-- if pin has a user, print user.email under user column -->
             <br />
-            
-            
+            <% if pin.locale%>
+              <div class="locale"><i class="fa fa-map-marker">&nbsp;</i><%= pin.locale %></div>
+            <% end %>
               
               <div class="actions">
-              <div class="name"><%= pin.user.name if pin.user %></div>
+              <div class="name"><%= pin.user.name_initialed %></div>
               <% if pin.user == current_user %>
                 <%= link_to edit_pin_path(pin) do %>
                   <i class="fa fa-pencil-square-o right-buffer"></i>

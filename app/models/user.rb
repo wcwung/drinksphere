@@ -8,5 +8,14 @@ class User < ActiveRecord::Base
 
   validates :name, presence: true
   validates :password, length: { in: 6..20 }
-  
+
+  has_many :pins, dependent: :destroy
+
+  def name_initialed
+  	split = name.split(" ")
+  	newsplit = split[1]
+  	lastName = newsplit[0] + "."
+
+  	fullName = split[0] + " " + lastName
+  end
 end

@@ -10,6 +10,13 @@
         <p>
           <%= @pin.description %>
         </p>
+        <p>
+          <div class="locale">
+            <% if @pin.locale %>
+              <i class="fa fa-map-marker">&nbsp;</i><%= @pin.locale %>
+            <% end %>
+          </div>
+        </p>
         <p><%= @pin.user.name %></p>
         <% if @pin.user == current_user %>
           <%= link_to 'Edit', edit_pin_path(@pin) %>

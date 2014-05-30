@@ -3,6 +3,7 @@
 <head>
   <title>drinksphere.</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +14,7 @@
   <%= render 'layouts/header' %>
     <div class="hero center">
       <h1 class="boom">Evolved Social Drinking</h1>
-      <h2 class="badoom">Discover new favorites and revisit old ones. </h2>
+      <h2 class="badoom">Discover new favorites.</h2>
       <!-- Sign up / Sign in buttons if user not signed in -->
       <% if !user_signed_in? %>
     

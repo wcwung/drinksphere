@@ -41,6 +41,8 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'pry-rails'
 
+gem 'jquery-wookmark-rails'
+
 group :development, :test do
 	gem 'sqlite3'
 	gem 'better_errors'
