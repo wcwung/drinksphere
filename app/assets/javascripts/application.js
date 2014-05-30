@@ -5,3 +5,4 @@
 //= require turbolinks
 //= require pins
 //= require jquery.freetile
+//= require word_switch
