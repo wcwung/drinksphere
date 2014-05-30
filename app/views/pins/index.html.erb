@@ -27,7 +27,7 @@
             <% end %>
               
               <div class="actions">
-              <div class="name"><%= pin.user.name_initialed %></div>
+              <div class="name"><%= pin.user.name_initialed if pin.user %></div>
               <% if pin.user == current_user %>
                 <%= link_to edit_pin_path(pin) do %>
                   <i class="fa fa-pencil-square-o right-buffer"></i>
@@ -35,8 +35,8 @@
                 <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
                     <i class="fa fa-times"></i>
                 <% end %>
-              </div>
               <% end %>
+            </div>
           </div>
           
     </div>
